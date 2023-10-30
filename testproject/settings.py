@@ -75,10 +75,16 @@ WSGI_APPLICATION = 'testproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Semose_DB',
+        'USER': 'root',
+        'PASSWORD': 'apdlvmf4@@',
+        'HOST': 'jkkyui-MacBookPro.local',  # MySQL 서버 호스트
+        'PORT': '3306',           # 기본 포트 (3306)
     }
 }
+
+SECRET_KEY = 'django-insecure-)fa^*3o*32juq%9&j3genp7fe3wyt_a9p#n9j$uk38n)x(x95g'
 
 
 # Password validation
